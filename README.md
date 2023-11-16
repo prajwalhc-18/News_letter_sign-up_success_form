@@ -1,6 +1,7 @@
 # News_letter_sign-up_success_form
+<h2>URL: https://news-letter-login-success-form.netlify.app/</h2>
 
-# Front-end Style Guide
+<h3>Front-end Style Guide</h3> 
 
 ## Layout
 
