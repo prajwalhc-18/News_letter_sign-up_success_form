@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>News Letter</title>
+</head>
+<body>
+    <div class="container">
+        <img src="./data/illustration-sign-up-desktop.png" alt="">
+
+        <form id="newsletterForm" onsubmit="return subscribe()" novalidate>
+            <div class="header">
+                <h1>Stay updated!</h1>
+                <p>Join 60,000+ product managers receiving monthly updates on:</p>
+            </div>
+
+            <div class="options">
+                <div class="option-item">
+                  <img src="./data/icon-list.png" alt="Icon 1">
+                  <label for="point-1" id="label-1">Product discovery and building what matters</label>
+                </div>
+              
+                <div class="option-item">
+                  <img src="./data/icon-list.png" alt="Icon 2">
+                  <label for="point-2" id="label-2">Measuring to ensure updates are a success</label>
+                </div>
+              
+                <div class="option-item">
+                  <img src="./data/icon-list.png" alt="Icon 3">
+                  <label for="point-3" id="label-3">And much more</label>
+                </div>
+            </div>
+
+             <div class="input">
+                <label for="email" id="label-4">Email address</label>
+                <input type="email" id="email" placeholder="email@example.com">
+                <span id="email-error"></span> <!-- Add an element for error message -->
+            </div>
+        </form>
+        <button type="button" id="submit" onclick="validateForm()">Subscribe to monthly newsletter</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

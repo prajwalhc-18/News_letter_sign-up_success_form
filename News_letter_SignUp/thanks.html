@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Thanks for Subscribing</title>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <div>
+                <img src="./data/icon-success.png"/>
+            </div>
+
+            <div>
+                <h1>Thanks for subscribing!</h1>
+                <p>
+                    A confirmation email has been sent <b><span id="userEmail"></span></b>.
+                    Please open it and click the button inside to confirm your subscription
+                </p>
+            </div>
+        </form>
+
+        <button onclick="dismissMessage()">Dismiss message</button>
+    </div>
+
+    <script>
+        // Get the user email from the query parameter
+        const userEmail = new URLSearchParams(window.location.search).get('email');
+
+        // Display the user email in the span
+        document.getElementById('userEmail').innerText = userEmail;
+
+        function dismissMessage() {
+            // Navigate back to index.html
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>
