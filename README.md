@@ -1,5 +1,5 @@
 # News_letter_sign-up_success_form
-<h3>URL: [https://news-letter-login-success-form.netlify.app/](https://newsletter-signup-success-2024e.netlify.app/)</h3>
+<h3>URL: https://newsletter-signup-success-2024e.netlify.app/</h3>
 
 <h3>Front-end Style Guide</h3> 
 
